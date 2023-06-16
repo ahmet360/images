@@ -2,39 +2,16 @@
 <html>
 <head>
   <title>Image List</title>
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
 </head>
 <body>
   <h1>Image List</h1>
 
   <ul>
-    <li><a href="#" onclick="toggleImage('dalle'); return false;">DALL·E Image</a></li>
-    <li><a href="#" onclick="toggleImage('male'); return false;">Male Image</a></li>
-    <li><a href="#" onclick="toggleImage('halfangel'); return false;">Half Angel Half Demon Image</a></li>
-    <li><a href="#" onclick="toggleImage('webp'); return false;">WebP Image</a></li>
-    <li><a href="#" onclick="toggleImage('png'); return false;">PNG Image</a></li>
+    <li><a href="dalle.html">DALL·E Image</a></li>
+    <li><a href="male.html">Male Image</a></li>
+    <li><a href="halfangel.html">Half Angel Half Demon Image</a></li>
+    <li><a href="webp.html">WebP Image</a></li>
+    <li><a href="png.html">PNG Image</a></li>
   </ul>
-
-  <img id="dalle-img" src="DALL-E 2023-06-11 12.21.22 - golden hair.png" alt="DALL·E Image">
-  <img id="male-img" src="Male.jpg" alt="Male Image">
-  <img id="halfangel-img" src="a male half angel half demon with horns. a mix of (2).jpg" alt="Half Angel Half Demon Image">
-  <img id="webp-img" src="il_570xN.4749600017_ajvv.webp" alt="WebP Image">
-  <img id="png-img" src="image.png" alt="PNG Image">
-
-  <script>
-    function toggleImage(imageId) {
-      var image = document.getElementById(imageId + '-img');
-      if (image.style.display === 'none') {
-        image.style.display = 'block';
-      } else {
-        image.style.display = 'none';
-      }
-    }
-  </script>
 </body>
 </html>
-
